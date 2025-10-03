@@ -12,9 +12,9 @@ def classify_triangle(a, b, c):
     else:
         traingle = "Scalene"
 
-    # sides = sorted([a, b, c])
-    # if sides[0] ** 2 + sides[1] ** 2 == sides[2] ** 2:
-    #  return traingle + "Right"
+     sides = sorted([a, b, c])
+     if sides[0] ** 2 + sides[1] ** 2 == sides[2] ** 2:
+     return traingle + "Right"
 
     return traingle
 
@@ -24,3 +24,4 @@ if __name__ == "__main__":
     b = int(input("Enter side b: "))
     c = int(input("Enter side c: "))
     print("Triangle is:", classify_triangle(a, b, c))
+
